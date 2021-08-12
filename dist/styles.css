@@ -1,0 +1,89 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+* {
+    font-family: 'Varela Round', sans-serif;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    /* background-color: aliceblue; */
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* background-color: aqua; */
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.nav-bar button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(26, 206, 146);
+    font-weight: 900;
+    color: white;
+    width: 130px;
+}
+
+.nav-bar button:hover {
+    cursor: pointer;
+}
+
+.tab-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(219, 128, 8);
+    font-weight: 900;
+    color: white;
+    width: 130px;
+}
+
+img {
+    margin-bottom: 20px;
+    width: 600px;
+    max-width: 100%;
+}
+
+.location-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    background-color: rgba(177, 177, 177, 0.329);
+    padding: 0 20px;
+    margin-top: 30px;
+}
+
+#location-icon {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 0;
+    margin-right: 5px;
+}
+
+.hide {
+    display: none;
+}

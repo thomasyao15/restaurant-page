@@ -1,1 +1,4 @@
-console.log("Hello test");
+
+import initPage from './initPage';
+
+initPage();
