@@ -1,19 +1,20 @@
 
-export default function initPage() {
-    const header = document.createElement('h1')
-    header.textContent = "Thomash's Bare Bones Restaurant"
+import appendHeaderNav from "./appendHeaderNav";
+import appendHomeContent from "./appendHomeContent";
+import appendMenuContent from './appendMenuContent'
+import appendContactContent from './appendContactContent'
 
-    const navBar = document.createElement('div')
-    navBar.classList.add("nav-bar")
-    const homeButton = document.createElement('button')
-    const menuButton = document.createElement('button')
-    const contactButton = document.createElement('button')
-    homeButton.textContent = "Home"
-    menuButton.textContent = "Menu"
-    contactButton.textContent = "Contact Us"
+export function initPage() {
+    appendHeaderNav();
+    appendHomeContent();
 
-    navBar.append(homeButton, menuButton, contactButton)
-    
-    const contentDiv = document.querySelector(".content")
-    contentDiv.append(header, navBar)
+    // Append menu and contact but leave them hidden initially
+    appendMenuContent();
+    appendContactContent();
+
+    const menuTab = document.getElementById("menu")
+    menuTab.classList.add("hide")
+    const contactTab = document.getElementById("contact")
+    contactTab.classList.add("hide")
 }
+
