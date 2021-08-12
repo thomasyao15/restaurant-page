@@ -1,7 +1,6 @@
 
 import { initPage } from './initPage';
-import appendHomeContent from './appendHomeContent';
-
+import './style.css';
 
 function setNavButtonListeners() {
     const homeButton = document.getElementById("home-button")
